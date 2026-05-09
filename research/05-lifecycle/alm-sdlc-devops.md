@@ -8,7 +8,7 @@ This page models the lifecycle cluster as ontology nodes and semantic edges rath
 
 - concept_type: governance model
 - abstraction_layer: governance layer, cross-cutting layer
-- semantic_role: lifecycle governance over application change, release, maintenance, and control evidence
+- semantic_role: governance discipline over application change, release, maintenance, and lifecycle control evidence
 - confidence: medium
 - status: disputed
 
@@ -74,6 +74,11 @@ This page models the lifecycle cluster as ontology nodes and semantic edges rath
 - GitHub increasingly spans source control, actions, security, codespaces, and enterprise policy controls.
 - These vendor surfaces collapse multiple conceptual layers into one product boundary and can make DevOps look like a tool category instead of an operating model.
 
+## Master-Map Position
+
+- ALM is included here as a governance specialization over software lifecycle control.
+- In the master map, ALM is shown only where it clarifies the governance-to-SDLC control edge rather than as a separate enterprise-wide layer.
+
 ## Graph Fragment
 
 ```yaml
@@ -120,6 +125,7 @@ flowchart TD
     ci_cd[CI/CD]
     automation[Automation]
     observability[Observability]
+    software_change_release_work[Software Change and Release Work]
     faster_feedback[Faster Feedback and Smaller Batches]
     delivery_governance[Delivery Governance]
 
@@ -127,7 +133,7 @@ flowchart TD
     devops -->|cross_cuts| sdlc
     devops -->|cross_cuts| it_operations
     devops -->|cross_cuts| infrastructure
-    sdlc -->|lifecycle_for| automation
+    sdlc -->|lifecycle_for| software_change_release_work
     devops -->|enables| ci_cd
     devops -->|enables| automation
     devops -->|enables| observability
@@ -145,3 +151,5 @@ flowchart TD
 Related notes:
 
 - [Agile and delivery methodologies](../06-methodologies/agile-scrum-kanban-safe.md)
+- [Governance graph](../03-governance/governance-graph.md)
+- [Enterprise master map](../15-master-map/enterprise-master-map.md)

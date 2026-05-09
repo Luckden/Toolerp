@@ -63,16 +63,16 @@ flowchart TD
 	collapsed_views[Collapsed Enterprise Views]
 	fast_evolving_practice[Fast-Evolving Operational Practice]
 
-	product_boundaries -->|amplifies| industry_disagreement
-	abstraction_layers -->|amplifies| industry_disagreement
-	collapsed_views -->|amplifies| industry_disagreement
-	fast_evolving_practice -->|amplifies| industry_disagreement
-	industry_disagreement -->|overloads| enterprise_form
-	industry_disagreement -->|overloads| alm
-	industry_disagreement -->|overloads| devops
-	industry_disagreement -->|overloads| itsm_devops_relation
-	industry_disagreement -->|overloads| platform_engineering
-	industry_disagreement -->|overloads| enterprise_architecture
+	product_boundaries -->|enables| industry_disagreement
+	abstraction_layers -->|enables| industry_disagreement
+	collapsed_views -->|enables| industry_disagreement
+	fast_evolving_practice -->|enables| industry_disagreement
+	industry_disagreement -->|cross_cuts| enterprise_form
+	industry_disagreement -->|cross_cuts| alm
+	industry_disagreement -->|cross_cuts| devops
+	industry_disagreement -->|cross_cuts| itsm_devops_relation
+	industry_disagreement -->|cross_cuts| platform_engineering
+	industry_disagreement -->|cross_cuts| enterprise_architecture
 ```
 
 ## Reconstructed Claim

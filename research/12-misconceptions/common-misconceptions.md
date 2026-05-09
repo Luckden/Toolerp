@@ -51,17 +51,17 @@ flowchart TD
 	security_one_box[Security Belongs in One Box]
 	security_cross_cutting[Security Cross-Cuts Governance, Delivery, Operations, and Infrastructure]
 
-	one_diagram_grammar -->|causes| enterprise_confusion
-	everything_tree -->|corrected_by| shared_graph
-	one_model -->|corrected_by| multiple_views
-	vendor_equals_architecture -->|corrected_by| partial_abstraction
-	agile_replaces_lifecycle -->|corrected_by| lifecycle_states
-	security_one_box -->|corrected_by| security_cross_cutting
-	shared_graph -->|reduces| enterprise_confusion
-	multiple_views -->|reduces| enterprise_confusion
-	partial_abstraction -->|reduces| enterprise_confusion
-	lifecycle_states -->|reduces| enterprise_confusion
-	security_cross_cutting -->|reduces| enterprise_confusion
+	one_diagram_grammar -->|enables| enterprise_confusion
+	shared_graph -->|constrains| everything_tree
+	multiple_views -->|constrains| one_model
+	partial_abstraction -->|constrains| vendor_equals_architecture
+	lifecycle_states -->|constrains| agile_replaces_lifecycle
+	security_cross_cutting -->|constrains| security_one_box
+	shared_graph -->|constrains| enterprise_confusion
+	multiple_views -->|constrains| enterprise_confusion
+	partial_abstraction -->|constrains| enterprise_confusion
+	lifecycle_states -->|constrains| enterprise_confusion
+	security_cross_cutting -->|constrains| enterprise_confusion
 ```
 
 ## Reconstructed Claim

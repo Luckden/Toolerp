@@ -32,6 +32,9 @@ The model separates two coupled systems and one bridge artifact.
 
 ## Cognitive System Subnodes
 
+The subnodes below are an explanatory decomposition of the cognitive system.
+For cross-page linking, the canonical external edges should attach to `cognitive_system`, `execution_system`, and `decision_interface` unless finer-grained control is explicitly required.
+
 ### Observation
 
 - concept_type: execution process
@@ -279,3 +282,9 @@ edges:
 - Enterprises do not just need lifecycle and governance graphs.
 - They also need a cognitive-execution control loop that governs how knowledge becomes action and how action revises knowledge.
 - This loop is universal enough to bridge science, software delivery, product organizations, and operational command systems.
+
+Related notes:
+
+- [Unified semantic relationship model](../13-model/unified-semantic-relationship-model.md)
+- [ALM, SDLC, and DevOps](../05-lifecycle/alm-sdlc-devops.md)
+- [Enterprise master map](../15-master-map/enterprise-master-map.md)

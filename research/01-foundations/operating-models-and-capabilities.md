@@ -14,10 +14,17 @@ Provisional claim:
 Graph model:
 
 - capability -> enables -> value_stream
-- operating_model -> governs -> capability allocation and execution patterns
-- value_stream -> depends_on -> multiple capabilities
+- operating_model -> enables -> capability realization
+- capability -> enables -> value_stream execution capacity
 
 Source status:
 
 - Strongly aligned with business architecture and EA practice.
 - Needs stronger source-backed validation in later passes.
+
+Related notes:
+
+- [Enterprise foundations](enterprise-foundations.md)
+- [Portfolio, product, and program relationships](../04-portfolio-product-program/portfolio-product-program.md)
+- [ALM, SDLC, and DevOps](../05-lifecycle/alm-sdlc-devops.md)
+- [Enterprise master map](../15-master-map/enterprise-master-map.md)

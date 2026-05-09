@@ -173,3 +173,9 @@ flowchart TD
 - Scrum is a framework for empirical team execution.
 - SAFe is a scaling framework that changes enterprise topology.
 - These concepts modify how work flows through SDLC rather than replacing SDLC.
+
+Related notes:
+
+- [ALM, SDLC, and DevOps](../05-lifecycle/alm-sdlc-devops.md)
+- [Portfolio, product, and program relationships](../04-portfolio-product-program/portfolio-product-program.md)
+- [Common misconceptions](../12-misconceptions/common-misconceptions.md)

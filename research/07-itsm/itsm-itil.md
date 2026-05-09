@@ -115,3 +115,10 @@ flowchart TD
 - ITSM is an operational governance discipline for services.
 - ITIL is a framework for service management practice.
 - ServiceNow is a vendor abstraction that blends workflow, service graph, and operational control into one platform surface.
+
+Related notes:
+
+- [Governance graph](../03-governance/governance-graph.md)
+- [ALM, SDLC, and DevOps](../05-lifecycle/alm-sdlc-devops.md)
+- [Vendor ecosystem mapping](../10-vendors/vendor-ecosystem.md)
+- [Enterprise master map](../15-master-map/enterprise-master-map.md)

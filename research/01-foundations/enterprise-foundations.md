@@ -113,3 +113,4 @@ Related notes:
 - [Mission, vision, strategy, and goals](mission-vision-strategy.md)
 - [Operating models and capabilities](operating-models-and-capabilities.md)
 - [Unified semantic relationship model](../13-model/unified-semantic-relationship-model.md)
+- [Enterprise master map](../15-master-map/enterprise-master-map.md)

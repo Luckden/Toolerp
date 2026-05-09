@@ -22,6 +22,7 @@ flowchart TD
     product_management[Product Management]
     enterprise_architecture[Enterprise Architecture]
     governance[Governance]
+    alm[ALM]
     security[Security]
     infrastructure[Infrastructure]
     platform_engineering[Platform Engineering]
@@ -46,8 +47,11 @@ flowchart TD
     enterprise_architecture -->|cross_cuts| operating_model
     enterprise_architecture -->|cross_cuts| product_management
     governance -->|cross_cuts| portfolio_management
+    governance -->|cross_cuts| product_management
+    governance -->|cross_cuts| alm
     governance -->|cross_cuts| sdlc
     governance -->|cross_cuts| infrastructure
+    alm -->|governs| sdlc
     security -->|cross_cuts| sdlc
     security -->|cross_cuts| devops
     security -->|cross_cuts| infrastructure
@@ -73,7 +77,7 @@ flowchart TD
 1. Mission, strategy, and operating model set intent and allocation logic.
 2. Capability, value stream, portfolio, and product nodes translate intent into delivery ownership and flow.
 3. Architecture, governance, security, and platform nodes cross-cut delivery rather than sit beneath it.
-4. SDLC, DevOps, ITSM, and Agile shape how work moves and how change is controlled.
+4. ALM, SDLC, DevOps, ITSM, and Agile shape how work moves and how change is controlled.
 5. The cognitive loop explains how enterprise knowledge becomes action and how action revises the model.
 
 ## Related Notes

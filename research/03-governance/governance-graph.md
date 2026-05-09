@@ -62,10 +62,10 @@ Governance is the enterprise control graph for permission, constraint, evidence,
 
 ## Semantic Edges
 
-- governance -> governs -> portfolios
-- governance -> governs -> products
-- governance -> governs -> delivery pipelines
-- governance -> governs -> infrastructure
+- governance -> cross_cuts -> portfolio management
+- governance -> cross_cuts -> product management
+- governance -> cross_cuts -> delivery pipelines
+- governance -> cross_cuts -> infrastructure
 - compliance -> constrains -> execution
 - risk_management -> constrains -> decision_interface
 - audit -> audits -> governance evidence
@@ -91,8 +91,8 @@ Governance is the enterprise control graph for permission, constraint, evidence,
 ```mermaid
 flowchart TD
 	governance[Governance]
-	portfolios[Portfolios]
-	products[Products]
+	portfolio_management[Portfolio Management]
+	product_management[Product Management]
 	delivery_pipelines[Delivery Pipelines]
 	infrastructure[Infrastructure]
 	compliance[Compliance]
@@ -109,10 +109,10 @@ flowchart TD
 	governance_rules[Governance Rules]
 	compliance_controls[Compliance Controls]
 
-	governance -->|governs| portfolios
-	governance -->|governs| products
-	governance -->|governs| delivery_pipelines
-	governance -->|governs| infrastructure
+	governance -->|cross_cuts| portfolio_management
+	governance -->|cross_cuts| product_management
+	governance -->|cross_cuts| delivery_pipelines
+	governance -->|cross_cuts| infrastructure
 	compliance -->|constrains| execution
 	risk_management -->|constrains| decision_interface
 	audit -->|audits| governance_evidence
@@ -130,5 +130,7 @@ flowchart TD
 Related notes:
 
 - [Enterprise architecture](../02-architecture/enterprise-architecture.md)
+- [ITSM and ITIL](../07-itsm/itsm-itil.md)
 - [Security cross-cutting layer](../09-security/security-cross-cutting.md)
 - [Unified semantic relationship model](../13-model/unified-semantic-relationship-model.md)
+- [Enterprise master map](../15-master-map/enterprise-master-map.md)

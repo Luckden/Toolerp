@@ -33,6 +33,7 @@ This page separates dependency substrate from platform abstraction.
 - infrastructure -> depends_on -> cloud, hardware, runtime, network
 - platform_engineering -> enables -> developer self-service
 - platform_engineering -> operationalizes -> standardization and paved roads
+- platform_engineering -> operationalizes -> internal developer platform
 - internal_developer_platform -> supports -> SDLC
 - internal_developer_platform -> supports -> governance automation
 - internal_developer_platform -> supports -> infrastructure abstraction
@@ -73,16 +74,16 @@ nodes:
     layer: cross_cutting
 edges:
   - from: platform_engineering
-    to: infrastructure
+    to: idp
     type: operationalizes
   - from: idp
     to: sdlc
-    type: enables
+    type: supports
   - from: idp
     to: governance
-    type: automates
-  - from: infrastructure
-    to: devops
+    type: supports
+  - from: idp
+    to: infrastructure
     type: supports
 ```
 
@@ -115,12 +116,18 @@ flowchart TD
   idp -->|supports| infrastructure_abstraction
   platform_engineering -->|cross_cuts| devops
   platform_engineering -->|cross_cuts| governance
-  platform_engineering -->|turns into usable abstraction over| infrastructure
-  idp -->|interfaces with| infrastructure
+  platform_engineering -->|operationalizes| idp
+  idp -->|supports| infrastructure
 ```
 
 ## Reconstructed Claim
 
 - Infrastructure is the dependency substrate.
-- Platform engineering is the operating model that turns infrastructure into usable abstraction.
+- Platform engineering is the operating model that turns infrastructure into a usable internal platform surface.
 - Internal developer platforms are the cross-cutting delivery interface over infrastructure, controls, and workflow.
+
+Related notes:
+
+- [Portfolio, product, and program relationships](../04-portfolio-product-program/portfolio-product-program.md)
+- [Vendor ecosystem mapping](../10-vendors/vendor-ecosystem.md)
+- [Enterprise master map](../15-master-map/enterprise-master-map.md)

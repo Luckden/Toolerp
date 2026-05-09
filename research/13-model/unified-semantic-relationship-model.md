@@ -9,6 +9,8 @@ This is the current machine-friendly model for the enterprise meta-model.
 - Every concept must declare its edge semantics instead of relying on implied nesting.
 - Every major claim should carry a confidence marker.
 - Competing interpretations should be preserved instead of averaged away.
+- Edge direction should be expressed in active form from source to target.
+- Page-local decompositions may add explanatory nodes, but the canonical edge vocabulary should remain stable across pages.
 
 ## Node Types
 
@@ -22,6 +24,7 @@ This is the current machine-friendly model for the enterprise meta-model.
 
 ## Edge Types
 
+- informs
 - governs
 - funds
 - enables
@@ -30,7 +33,7 @@ This is the current machine-friendly model for the enterprise meta-model.
 - cross_cuts
 - lifecycle_for
 - methodology_for
-- constrained_by
+- constrains
 - platform_for
 - operationalizes
 - automates
@@ -40,13 +43,24 @@ This is the current machine-friendly model for the enterprise meta-model.
 - supports
 - implementation_of
 
+## Directional Convention
+
+- `A -> informs -> B` means A shapes the interpretation of B.
+- `A -> constrains -> B` means A limits the acceptable state or action space of B.
+- `A -> governs -> B` means A has explicit control authority over B.
+- `A -> cross_cuts -> B` means A applies across B without implying subordination.
+- `A -> operationalizes -> B` means A turns B into executable or repeatable practice.
+- `A -> enables -> B` means A increases B's feasible execution capacity.
+
 ## Concept Card Template
 
 ```yaml
 concept: example_concept
-concept_type: lifecycle | governance_model | operating_model | methodology | framework | capability | architecture_domain | organizational_function | cultural_philosophy | technical_platform_abstraction | execution_process | management_discipline
+concept_type: intent | structure | governance | lifecycle | technology | vendor | cognitive-control
+subtype: mission | strategy | capability | policy | framework | operating_model | architecture_domain | organizational_function | execution_process | management_discipline | technical_platform_abstraction | methodology | cultural_philosophy
 abstraction_layer: strategic | governance | portfolio | product | engineering | operational | infrastructure | organizational | cross_cutting
 semantic_edges:
+  informs: []
   governs: []
   enables: []
   executes: []
@@ -75,6 +89,8 @@ nodes:
     type: system
   - id: mission
     type: intent
+  - id: vision
+    type: intent
   - id: strategy
     type: intent
   - id: operating_model
@@ -85,24 +101,52 @@ nodes:
     type: structure
   - id: governance
     type: governance
+  - id: alm
+    type: governance
   - id: devops
     type: lifecycle
   - id: sdlc
     type: lifecycle
+  - id: itsm
+    type: lifecycle
+  - id: agile
+    type: lifecycle
+  - id: scrum
+    type: lifecycle
   - id: platform_engineering
     type: technology
+  - id: security
+    type: governance
   - id: zero_trust
     type: governance
+  - id: cognitive_system
+    type: cognitive-control
+  - id: decision_interface
+    type: cognitive-control
+  - id: execution_system
+    type: cognitive-control
+  - id: revision
+    type: cognitive-control
+  - id: timeboxing
+    type: governance
+  - id: minimal_viable_test
+    type: cognitive-control
 edges:
   - from: mission
-    to: strategy
+    to: vision
     type: informs
+  - from: vision
+    to: strategy
+    type: constrains
   - from: strategy
     to: operating_model
     type: operationalizes
+  - from: strategy
+    to: capability
+    type: funds
   - from: operating_model
     to: capability
-    type: allocates
+    type: enables
   - from: capability
     to: value_stream
     type: enables
@@ -112,27 +156,30 @@ edges:
   - from: governance
     to: devops
     type: cross_cuts
+  - from: alm
+    to: sdlc
+    type: governs
   - from: platform_engineering
     to: sdlc
     type: enables
   - from: platform_engineering
     to: governance
-    type: automates
+    type: cross_cuts
   - from: zero_trust
     to: enterprise
     type: cross_cuts
   - from: agile
     to: sdlc
-    type: methodology_for
+    type: cross_cuts
   - from: scrum
     to: agile
     type: implementation_of
   - from: itsm
-    to: operations
-    type: governs
+    to: devops
+    type: cross_cuts
   - from: platform_engineering
     to: devops
-    type: enables
+    type: cross_cuts
   - from: security
     to: sdlc
     type: cross_cuts
@@ -165,20 +212,21 @@ edges:
 flowchart TD
     enterprise[Enterprise]
     mission[Mission]
+    vision[Vision]
     strategy[Strategy]
     operating_model[Operating Model]
     capability[Capability]
     value_stream[Value Stream]
     governance[Governance]
+    alm[ALM]
     sdlc[SDLC]
     devops[DevOps]
+    itsm[ITSM]
     platform_engineering[Platform Engineering]
+    security[Security]
     zero_trust[Zero Trust]
     agile[Agile]
     scrum[Scrum]
-    itsm[ITSM]
-    operations[Operations]
-    security[Security]
     cognitive_system[Cognitive System]
     decision_interface[Decision Interface]
     execution_system[Execution System]
@@ -186,19 +234,22 @@ flowchart TD
     timeboxing[Timeboxing]
     minimal_viable_test[Minimal Viable Test]
 
-    mission -->|informs| strategy
+    mission -->|informs| vision
+    vision -->|constrains| strategy
     strategy -->|operationalizes| operating_model
-    operating_model -->|allocates| capability
+    strategy -->|funds| capability
+    operating_model -->|enables| capability
     capability -->|enables| value_stream
     governance -->|cross_cuts| sdlc
     governance -->|cross_cuts| devops
+    alm -->|governs| sdlc
     platform_engineering -->|enables| sdlc
-    platform_engineering -->|automates| governance
+    platform_engineering -->|cross_cuts| governance
     zero_trust -->|cross_cuts| enterprise
-    agile -->|methodology_for| sdlc
+    agile -->|cross_cuts| sdlc
     scrum -->|implementation_of| agile
-    itsm -->|governs| operations
-    platform_engineering -->|enables| devops
+    itsm -->|cross_cuts| devops
+    platform_engineering -->|cross_cuts| devops
     security -->|cross_cuts| sdlc
     security -->|cross_cuts| devops
     cognitive_system -->|operationalizes| decision_interface

@@ -8,11 +8,19 @@ Current stance:
 - Hierarchies still exist, but they are only one relationship type among many.
 - Governance, lifecycle, funding, and technical dependency should never be collapsed into the same tree.
 
+Canonical reference:
+
+- The shared edge vocabulary, concept types, and abstraction-layer conventions are defined in [Unified semantic relationship model](13-model/unified-semantic-relationship-model.md).
+- Page-local diagrams may decompose concepts further, but they should reuse the same canonical edge semantics.
+
 Navigation:
 
 - [Method approach](00-method/approach.md)
 - [Enterprise foundations](01-foundations/enterprise-foundations.md)
+- [Mission, vision, strategy, and goals](01-foundations/mission-vision-strategy.md)
+- [Operating models, capabilities, and value streams](01-foundations/operating-models-and-capabilities.md)
 - [Enterprise architecture](02-architecture/enterprise-architecture.md)
+- [TOGAF, ArchiMate, and Zachman](02-architecture/togaf-archimate-zachman.md)
 - [Governance graph](03-governance/governance-graph.md)
 - [Portfolio, product, and program relationships](04-portfolio-product-program/portfolio-product-program.md)
 - [ALM, SDLC, and DevOps](05-lifecycle/alm-sdlc-devops.md)

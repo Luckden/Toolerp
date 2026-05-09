@@ -9,8 +9,8 @@ Observed pattern:
 Graph model:
 
 - mission -> informs -> vision
-- strategy -> operationalizes -> mission/vision
-- goals -> measure -> strategy
+- vision -> constrains -> strategy
+- strategy -> operationalizes -> goals
 
 Interpretation:
 
@@ -21,3 +21,9 @@ Source status:
 
 - Framework-specific and practitioner convention.
 - Requires additional framework sources for stronger validation.
+
+Related notes:
+
+- [Enterprise foundations](enterprise-foundations.md)
+- [Operating models, capabilities, and value streams](operating-models-and-capabilities.md)
+- [Enterprise master map](../15-master-map/enterprise-master-map.md)

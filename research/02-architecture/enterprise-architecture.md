@@ -115,9 +115,11 @@ flowchart TD
 - Enterprise architecture is not a simple architecture layer beneath strategy.
 - It is a cross-cutting discipline plus governance system supported by frameworks, languages, and classification schemes.
 - The confusion comes from mixing method, notation, and governance under the same label.
+- The master map shows only selected high-value cross-domain edges, not the full decomposition of every architecture subdomain.
 
 Related notes:
 
 - [TOGAF and ArchiMate relation](togaf-archimate-zachman.md)
 - [Governance graph](../03-governance/governance-graph.md)
 - [Unified semantic relationship model](../13-model/unified-semantic-relationship-model.md)
+- [Enterprise master map](../15-master-map/enterprise-master-map.md)

@@ -44,6 +44,14 @@ Vendor platforms should be modeled as abstraction-distortion layers over the ent
 - confidence: high
 - status: vendor convention
 
+### Backstage
+
+- concept_type: technical_platform_abstraction
+- abstraction_layer: engineering layer, cross-cutting layer, infrastructure layer
+- semantic_role: developer portal and internal platform surface for catalog, templates, documentation, and service ownership workflows
+- confidence: medium
+- status: vendor convention
+
 ## Semantic Edges
 
 - github -> supports -> code collaboration, actions, security, and policy controls
@@ -51,7 +59,7 @@ Vendor platforms should be modeled as abstraction-distortion layers over the ent
 - azure_devops -> supports -> boards, repos, pipelines, artifacts, and test plans
 - jira -> supports -> planning and workflow abstraction
 - servicenow -> supports -> ITSM, ITOM, CMDB, and service graph workflows
-- vendor_platforms -> distort -> enterprise terminology boundaries
+- backstage -> supports -> internal developer platform catalog and service ownership
 
 ## Competing Interpretations
 
@@ -74,23 +82,20 @@ flowchart TD
 	azure_devops[Azure DevOps]
 	jira[Jira]
 	servicenow[ServiceNow]
+	backstage[Backstage]
 	code_collaboration[Code Collaboration]
 	delivery_surface[Planning, CI/CD, Security, Deployment, and Monitoring]
 	lifecycle_tooling[Boards, Repos, Pipelines, Artifacts, and Test Plans]
 	planning_workflow[Planning and Workflow Abstraction]
 	service_graph_workflows[ITSM, ITOM, CMDB, and Service Graph Workflows]
-	enterprise_terminology[Enterprise Terminology Boundaries]
+	platform_catalog[Internal Platform Catalog and Service Ownership]
 
 	github -->|supports| code_collaboration
 	gitlab -->|supports| delivery_surface
 	azure_devops -->|supports| lifecycle_tooling
 	jira -->|supports| planning_workflow
 	servicenow -->|supports| service_graph_workflows
-	github -->|can blur| enterprise_terminology
-	gitlab -->|can blur| enterprise_terminology
-	azure_devops -->|can blur| enterprise_terminology
-	jira -->|can blur| enterprise_terminology
-	servicenow -->|can blur| enterprise_terminology
+	backstage -->|supports| platform_catalog
 ```
 
 ## Reconstructed Claim
@@ -103,4 +108,5 @@ Related notes:
 
 - [ITSM and ITIL](../07-itsm/itsm-itil.md)
 - [ALM, SDLC, and DevOps](../05-lifecycle/alm-sdlc-devops.md)
+- [Platform and infrastructure](../08-platform/platform-infrastructure.md)
 - [Common misconceptions](../12-misconceptions/common-misconceptions.md)
