@@ -1,0 +1,12 @@
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Domain\bin\Debug\net10.0\Toolerp.Backend.Domain.deps.json
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Domain\bin\Debug\net10.0\Toolerp.Backend.Domain.dll
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Domain\bin\Debug\net10.0\Toolerp.Backend.Domain.pdb
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Domain\obj\Debug\net10.0\Toolerp.Backend.Domain.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Domain\obj\Debug\net10.0\Toolerp.Backend.Domain.AssemblyInfoInputs.cache
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Domain\obj\Debug\net10.0\Toolerp.Backend.Domain.AssemblyInfo.cs
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Domain\obj\Debug\net10.0\Toolerp.Backend.Domain.csproj.CoreCompileInputs.cache
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Domain\obj\Debug\net10.0\Toolerp.Backend.Domain.sourcelink.json
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Domain\obj\Debug\net10.0\Toolerp.Backend.Domain.dll
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Domain\obj\Debug\net10.0\refint\Toolerp.Backend.Domain.dll
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Domain\obj\Debug\net10.0\Toolerp.Backend.Domain.pdb
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Domain\obj\Debug\net10.0\ref\Toolerp.Backend.Domain.dll

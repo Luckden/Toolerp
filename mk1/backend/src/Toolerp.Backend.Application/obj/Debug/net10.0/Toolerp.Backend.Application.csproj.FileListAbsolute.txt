@@ -1,0 +1,16 @@
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\obj\Debug\net10.0\Toolerp.Backend.Application.csproj.AssemblyReference.cache
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\obj\Debug\net10.0\Toolerp.Backend.Application.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\obj\Debug\net10.0\Toolerp.Backend.Application.AssemblyInfoInputs.cache
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\obj\Debug\net10.0\Toolerp.Backend.Application.AssemblyInfo.cs
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\obj\Debug\net10.0\Toolerp.Backend.Application.csproj.CoreCompileInputs.cache
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\obj\Debug\net10.0\Toolerp.Backend.Application.sourcelink.json
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\bin\Debug\net10.0\Toolerp.Backend.Application.deps.json
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\bin\Debug\net10.0\Toolerp.Backend.Application.dll
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\bin\Debug\net10.0\Toolerp.Backend.Application.pdb
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\bin\Debug\net10.0\Toolerp.Backend.Domain.dll
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\bin\Debug\net10.0\Toolerp.Backend.Domain.pdb
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\obj\Debug\net10.0\Toolerp..2681FCF2.Up2Date
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\obj\Debug\net10.0\Toolerp.Backend.Application.dll
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\obj\Debug\net10.0\refint\Toolerp.Backend.Application.dll
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\obj\Debug\net10.0\Toolerp.Backend.Application.pdb
+C:\Users\cheah\Documents\Toolerp\mk1\backend\src\Toolerp.Backend.Application\obj\Debug\net10.0\ref\Toolerp.Backend.Application.dll

@@ -1,0 +1,39 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v10.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v10.0": {
+      "Toolerp.Backend.Application/1.0.0": {
+        "dependencies": {
+          "Toolerp.Backend.Domain": "1.0.0"
+        },
+        "runtime": {
+          "Toolerp.Backend.Application.dll": {}
+        }
+      },
+      "Toolerp.Backend.Domain/1.0.0": {
+        "runtime": {
+          "Toolerp.Backend.Domain.dll": {
+            "assemblyVersion": "1.0.0.0",
+            "fileVersion": "1.0.0.0"
+          }
+        }
+      }
+    }
+  },
+  "libraries": {
+    "Toolerp.Backend.Application/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Toolerp.Backend.Domain/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}

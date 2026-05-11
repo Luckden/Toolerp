@@ -1,0 +1,1 @@
+export const apiMocksEnabled = import.meta.env.VITE_ENABLE_API_MOCKS !== 'false'

@@ -1,0 +1,69 @@
+@import "tailwindcss";
+@plugin "daisyui";
+
+@theme {
+  --font-sans: "Sora", "Segoe UI", sans-serif;
+  --font-mono: "IBM Plex Mono", monospace;
+}
+
+@plugin "daisyui/theme" {
+  name: "toolerp";
+  default: true;
+  prefersdark: false;
+  color-scheme: light;
+
+  --color-base-100: #f5f7f4;
+  --color-base-200: #edf1eb;
+  --color-base-300: #d7dfd4;
+  --color-base-content: #18201d;
+  --color-primary: #0f766e;
+  --color-primary-content: #f5fffd;
+  --color-secondary: #14532d;
+  --color-secondary-content: #f4fff7;
+  --color-accent: #c2410c;
+  --color-accent-content: #fff8f1;
+  --color-neutral: #20332b;
+  --color-neutral-content: #eef8f3;
+  --color-info: #2563eb;
+  --color-info-content: #eff6ff;
+  --color-success: #15803d;
+  --color-success-content: #f0fdf4;
+  --color-warning: #b45309;
+  --color-warning-content: #fffbeb;
+  --color-error: #b91c1c;
+  --color-error-content: #fef2f2;
+  --radius-selector: 1rem;
+  --radius-field: 0.9rem;
+  --radius-box: 1.25rem;
+  --size-selector: 0.25rem;
+  --size-field: 0.25rem;
+  --border: 1px;
+  --depth: 0;
+  --noise: 0;
+}
+
+:root {
+  color: #18201d;
+  background:
+    radial-gradient(circle at top, rgba(15, 118, 110, 0.08), transparent 34%),
+    linear-gradient(180deg, #f9fbf8 0%, #eef3ed 100%);
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+}
+
+#root {
+  min-height: 100vh;
+}
