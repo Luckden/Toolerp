@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\cheah\\Documents\\Toolerp\\mk1\\backend\\src\\Toolerp.Backend.Domain\\Toolerp.Backend.Domain.csproj": {}
+    "/Users/cheahjityung/Projects/Untitled/Toolerp/mk1/backend/src/Toolerp.Backend.Domain/Toolerp.Backend.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\cheah\\Documents\\Toolerp\\mk1\\backend\\src\\Toolerp.Backend.Domain\\Toolerp.Backend.Domain.csproj": {
+    "/Users/cheahjityung/Projects/Untitled/Toolerp/mk1/backend/src/Toolerp.Backend.Domain/Toolerp.Backend.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\cheah\\Documents\\Toolerp\\mk1\\backend\\src\\Toolerp.Backend.Domain\\Toolerp.Backend.Domain.csproj",
+        "projectUniqueName": "/Users/cheahjityung/Projects/Untitled/Toolerp/mk1/backend/src/Toolerp.Backend.Domain/Toolerp.Backend.Domain.csproj",
         "projectName": "Toolerp.Backend.Domain",
-        "projectPath": "C:\\Users\\cheah\\Documents\\Toolerp\\mk1\\backend\\src\\Toolerp.Backend.Domain\\Toolerp.Backend.Domain.csproj",
-        "packagesPath": "C:\\Users\\cheah\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\cheah\\Documents\\Toolerp\\mk1\\backend\\src\\Toolerp.Backend.Domain\\obj\\",
+        "projectPath": "/Users/cheahjityung/Projects/Untitled/Toolerp/mk1/backend/src/Toolerp.Backend.Domain/Toolerp.Backend.Domain.csproj",
+        "packagesPath": "/Users/cheahjityung/.nuget/packages/",
+        "outputPath": "/Users/cheahjityung/Projects/Untitled/Toolerp/mk1/backend/src/Toolerp.Backend.Domain/obj/",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\cheah\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "/Users/cheahjityung/.nuget/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net10.0"
@@ -38,7 +38,7 @@
           "auditLevel": "low",
           "auditMode": "all"
         },
-        "SdkAnalysisLevel": "10.0.200"
+        "SdkAnalysisLevel": "10.0.100"
       },
       "frameworks": {
         "net10.0": {
@@ -59,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\10.0.201/PortableRuntimeIdentifierGraph.json",
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/10.0.103/PortableRuntimeIdentifierGraph.json",
           "packagesToPrune": {
             "Microsoft.CSharp": "(,4.7.32767]",
             "Microsoft.VisualBasic": "(,10.4.32767]",

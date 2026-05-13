@@ -1,11 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "vAhjAEZCZxU=",
+  "dgSpecHash": "mBw5dCOLPGY=",
   "success": true,
-  "projectFilePath": "C:\\Users\\cheah\\Documents\\Toolerp\\mk1\\backend\\src\\Toolerp.Backend.Api\\Toolerp.Backend.Api.csproj",
+  "projectFilePath": "/Users/cheahjityung/Projects/Untitled/Toolerp/mk1/backend/src/Toolerp.Backend.Api/Toolerp.Backend.Api.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\cheah\\.nuget\\packages\\microsoft.aspnetcore.openapi\\10.0.5\\microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
-    "C:\\Users\\cheah\\.nuget\\packages\\microsoft.openapi\\2.0.0\\microsoft.openapi.2.0.0.nupkg.sha512"
+    "/Users/cheahjityung/.nuget/packages/microsoft.aspnetcore.openapi/10.0.5/microsoft.aspnetcore.openapi.10.0.5.nupkg.sha512",
+    "/Users/cheahjityung/.nuget/packages/microsoft.openapi/2.0.0/microsoft.openapi.2.0.0.nupkg.sha512"
   ],
   "logs": []
 }

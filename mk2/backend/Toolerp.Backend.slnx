@@ -1,0 +1,8 @@
+<Solution>
+  <Folder Name="/src/">
+    <Project Path="src/Toolerp.Backend.Api/Toolerp.Backend.Api.csproj" />
+    <Project Path="src/Toolerp.Backend.Application/Toolerp.Backend.Application.csproj" />
+    <Project Path="src/Toolerp.Backend.Domain/Toolerp.Backend.Domain.csproj" />
+    <Project Path="src/Toolerp.Backend.Infrastructure/Toolerp.Backend.Infrastructure.csproj" />
+  </Folder>
+</Solution>

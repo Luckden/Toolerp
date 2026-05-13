@@ -1,0 +1,5 @@
+.DS_Store
+toolerp/node_modules/
+toolerp/dist/
+toolerp/dist-ssr/
+toolerp/*.local

@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("Toolerp.Backend.Domain")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b0feeef3adbe6733dc76e68c172c89ddcf4be86e")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+df799dae21a0c13da18ea4fdf6ece9d264432b76")]
 [assembly: System.Reflection.AssemblyProductAttribute("Toolerp.Backend.Domain")]
 [assembly: System.Reflection.AssemblyTitleAttribute("Toolerp.Backend.Domain")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
